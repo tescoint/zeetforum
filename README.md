@@ -9,7 +9,9 @@ Admin And Moderators have the same permissions and access only difference is tha
 Same Goes For VIP and Members
 - Ad Manager 
   The platform has an inbuilt ad manager where admin and moderator can insert ad codes, or banners. THe fields accept html contents
-- ETC
+- Usertype Badge and Icon
+   Each usertype is designated a badge and an icon to be able to quickly verify the user type of the user anywhere
+- and many others.....
 
 HOW TO INSTALL
 
