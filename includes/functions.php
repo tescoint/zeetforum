@@ -41,9 +41,16 @@ $uusertype = $udata[0]['usertype'];
 if(check_setup_status() === TRUE){
 	//Here Lies All the Details of the Forum
 	$fdata = get_forum_details();
-	foreach($fdata as $data){
-	 $$data['config_name'] = $data['config_value'];
-	}
+    $approve_thread = $fdata[0]['config_value'];
+    $site_image = $fdata[1]['config_value'];
+    $site_setup = $fdata[2]['config_value'];
+    $thread_terms = $fdata[3]['config_value'];
+    $site_title = $fdata[4]['config_value'];
+    $site_timezone = $fdata[5]['config_value'];
+    $site_registration = $fdata[6]['config_value'];
+	// foreach($fdata as $data){
+	//  $$data['config_name'] = $data['config_value'];
+	// }
 	 //print_r($fdata);
 }
 
