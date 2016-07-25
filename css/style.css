@@ -1,0 +1,137 @@
+@import url("dropzone.css");
+body{
+	background-image: url(../img/back.jpg);
+	
+
+}
+
+.clear{
+	clear: both;
+}
+
+div.row{
+	margin-right: 0px;
+}
+.container{
+	width: 80%;
+}
+
+ .border{
+ 	border: 1px solid darkgreen;
+ 	border-radius: 12px;
+ 	background: #E8ECE0;
+ 	margin-bottom: 5px;
+ 	/*#E8ECE0
+	#F6F6EC
+ 	*/
+ }
+
+ .p{
+ 	text-align: center;
+ }
+ .bderbtm{
+ 	padding-bottom: 10px;
+ 	border-bottom: 1px solid ;
+ 	margin-left: -54px;
+ 	margin-right: -14px;
+ }
+ .sub{
+ 	display: inline;
+ }
+ ul.categories{
+ 	padding-left: 0px;
+ 	
+ }
+ .ads{
+ 	position: relative;
+ }
+ .ads img{
+ 	border: 1px solid darkgreen;
+ 	border-radius: 9px;
+ 	padding: 5px;
+ 	
+ }
+ .ads p{
+ 	border: 1px solid darkgreen;
+ 	border-radius: 9px;
+ 	padding: 3px;
+ }
+div#content{
+	min-height: 500px;
+	margin-top: 10px;
+	text-align: center;
+	overflow: hidden;
+	padding: 10px;
+}
+ul{
+	list-style-type: none;
+}
+#footer{
+	margin-top: 20px;
+	min-height: 100px;
+	text-align: center;
+	overflow: hidden;
+
+
+}
+
+#copy{
+	margin-top: 20px;
+	text-align: center;
+	padding: 10px;
+}
+#cat a{
+	color: black;
+}
+#subcat a{
+	color: #337AB7;
+}
+div{
+	overflow: hidden;
+}
+li:last-child{
+	border-bottom: none;
+}
+
+#list li{
+	padding: 10px;
+}
+#logo a{
+	color:black;
+}
+.post{
+	border: 1px solid darkgreen;
+ 	border-radius: 9px;
+ 	min-height: 100px;
+}
+.main{
+	padding: 5px;
+}
+.main h5{
+	margin-left: -5px;
+	padding-left: 10px;
+}
+@media (min-width: 100px) {
+    .container{max-width: 100%;width: 100%;}
+}
+@media (min-width: 600px) {
+    .container{max-width: 100%;width: 100%;}
+}
+@media (min-width: 768px) {
+    .container{max-width: 100%;}
+}
+@media (min-width: 992px) {
+    .container{max-width: 100%;}
+}
+@media (min-width: 1024px) {
+    .container{width: 97%;}
+}
+@media (min-width: 1200px){
+    .container{width: 80%;max-width: 80%;}
+}
+.attachment{
+	max-width: 80%;
+}
+.attachment img{
+	max-width: 100%;
+}

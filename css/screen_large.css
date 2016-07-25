@@ -1,0 +1,101 @@
+div#header{
+  min-height: 150px;
+  background-color: #232323;
+  color: #C0BAB6;
+}
+div#lht{
+  font-size: 36px;
+  margin-left: 80px;
+  padding-top: 40px; 
+}
+div#wrapper{
+  position: relative;
+  margin: 20px 30px 80px 30px;
+
+}
+div#content{
+  position: relative;
+  margin-left: 5%;
+  float: left;
+  max-width: 65%;
+}
+div#quote 
+  {
+margin: auto auto 60px 0px;
+
+    }
+
+
+
+
+
+
+#q 
+  {
+  font-size:120px;
+  padding: 10px;
+  margin-top: 10px;
+  }
+  blockquote#bq
+  
+    {
+    text-align:justify;
+    font-style:italic;
+    font-size:24px; 
+
+    
+    }
+  
+div#author
+  {
+  float: right;
+  }
+  div#itext
+  {
+  padding-top: 10px;
+  margin: auto auto auto 0px;
+  
+  
+  }
+
+  div #sidebar{
+  float: right;
+  max-width: 30%
+
+}
+div.yaatname{
+    width: 200px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+  div.yaatname1{
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+  }
+div .img1{
+  
+  float: left;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 920px){
+
+  div#crew{
+  margin: 80px 0px 0px 60px;
+  width: 500px;
+  position: relative;
+}
+}
+div#crew{
+  margin: 80px 0px 0px 60px;
+  position: relative;
+  float: left;
+}
+div.text{
+  margin-left: 250px;
+  width: 400px;
+}
+.clear{
+  clear: both;
+}

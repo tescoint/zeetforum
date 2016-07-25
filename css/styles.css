@@ -1,0 +1,21 @@
+body {
+    font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #6b3b25;
+   background-image: url(../img/yt.jpg);
+}
+#container{
+  position: relative;
+  max-width: 100%;
+  width: 98%;
+  margin: 0 auto;
+  background-color: white;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border: thin groove ;
+  padding: 7px;
+}

@@ -1,0 +1,93 @@
+
+div#header{
+  min-height: 150px;
+  background-color: #232323;
+  color: #C0BAB6;
+
+}
+div#lht{
+  font-size: 36px;
+  margin-left: 80px;
+  padding-top: 40px; 
+}
+div#wrapper{
+  position: relative;
+  margin: 20px 30px 80px 30px;
+
+}
+div#content{
+  position: relative;
+  margin: 5%;
+  max-width: 85%;
+}
+div#quote 
+  {
+margin: auto auto 60px 0px;
+
+    }
+
+
+
+
+
+
+#q 
+  {
+  font-size:120px;
+  padding: 10px;
+  margin-top: 10px;
+  }
+  blockquote#bq
+  
+    {
+    text-align:justify;
+    font-style:italic;
+    font-size:24px; 
+
+    
+    }
+  
+div#author
+  {
+  float: right;
+  }
+  div#itext
+  {
+  padding-top: 10px;
+  margin: auto auto auto 0px;
+  
+  
+  }
+
+  div #sidebar{
+  float: none;
+  max-width: 100%;
+
+}
+div.yaatname{
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+  div.yaatname1{
+    max-width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+div .img1{
+ float: none;
+  margin-bottom: 20px;
+}
+div#crew{
+  margin: 0px 0px 0px 0px;
+  position: relative;
+  max-width: 100%;
+}
+div.text{
+  margin-left: 0px;
+  max-width: 100%;
+}
+.clear{
+  clear: both;
+}
