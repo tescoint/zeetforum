@@ -39,7 +39,11 @@ require ('includes/header.php');
 	if($cstatus == 'inactive'){
 		header("location:index.php");
 	}
-	$mcdata = get_categories($cparentid);
+	if($cparentid == 0){
+		$mcdata = get_categories($cdata[0]['id']);
+	}else{
+	$mcdata = get_categories($cparentid);		
+	}
 	$mcname = $mcdata[0]['name'];
 	$mcslug = $mcdata[0]['slug'];
 

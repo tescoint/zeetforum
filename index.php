@@ -45,6 +45,9 @@
     if ($current_page < 1) {
       $current_page = 1;
     }elseif ($current_page > $lastpage) {
+      if($lastpage == 0){
+        $lastpage = 1;
+      }
       $current_page = $lastpage;
     }
     $offset = $per_page * ($current_page - 1);
