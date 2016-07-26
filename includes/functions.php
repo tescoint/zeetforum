@@ -437,6 +437,16 @@ function update($table,array $data,$where){
         }
     }
 
+    function last_replier($id){
+	$query = run_query("SELECT * FROM comments INNER JOIN members on comments.user=members.username where postid = $id ORDER BY comments.id DESC LIMIT 1");
+	if(empty($query)){
+	return "No Reply Yet";	
+	}else{
+	return $query[0]['username'];
+	}
+	
+}
+
 
 
 

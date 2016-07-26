@@ -30,11 +30,12 @@ require ('includes/header.php');
 
 
 </div><br><br>
-<?php if($cparentid < 1){?>
+<?php
+$sub_categories = run_query("SELECT * FROM categories where parentid = $cid and status = 'active'");
+ if($cparentid < 1 and !empty($sub_categories) ){?>
 <div class="row border p" id="list">
 		<ul>
 			<?php
-	$sub_categories = run_query("SELECT * FROM categories where parentid = $cid and status = 'active'");
 	foreach($sub_categories as $sub_cat){
 		$slug = $sub_cat['slug'];?>
 	<li class="bderbtm"><a href="category.php?c=<?php echo $slug;?>"><?php echo $sub_cat['name'];?></a></li>
@@ -110,12 +111,12 @@ require ('includes/header.php');
 <div class="row border p" id="list" style="min-height:100px">
 		<ul>
 			<?php
-	$threads = run_query("SELECT * FROM threads where category_id = $cid and status = 'active' ORDER BY id DESC LIMIT $offset, $per_page");
+	$threads = run_query("SELECT threads.*,members.usertype FROM threads LEFT JOIN members on threads.user=members.username where category_id = $cid and threads.status = 'active' ORDER BY threads.id DESC LIMIT $offset, $per_page");
 	if(empty($threads)){
 		echo "<p>No Threads in this Section</p>";
 	}
 	foreach($threads as $thread){?>
-	<li class="bderbtm" id="<?php echo $thread['id'];?>"><a href="thread.php?id=<?php echo $thread['id'];?>">&lArr;<?php echo $thread['title'];?>&rArr;</a>
+	<li class="bderbtm" id="<?php echo $thread['id'];?>"><a href="thread.php?id=<?php echo $thread['id'];?>">&lArr;<?php echo $thread['title'];?>&rArr;</a><br />by <?php echo $thread['user']; ?><span><?php get_icon($thread['usertype']);?></span><?php echo get_stats('comments',"postid='$thread[id]'"); ?> replies (<?php echo last_replier($thread['id']) ?>) </li>
 		<?php
 	}
 			?>
