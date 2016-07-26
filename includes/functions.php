@@ -15,8 +15,7 @@ set_exception_handler(function ($e) {
         }
     });
 
-//Initializing The Timezone Here
-date_default_timezone_set(get_timezone());
+
 
 //Wanna Check If A user is logged in, if he is logged in, I initialize all of his data
 if(isset($_SESSION['username'])){
@@ -36,7 +35,7 @@ $usecuritya = $udata[0]['securitya'];
 $uusertype = $udata[0]['usertype'];
 
 }
-
+if($dbc !== NULL){
 //Wanna Grab the Details of the Forum
 if(check_setup_status() === TRUE){
 	//Here Lies All the Details of the Forum
@@ -53,7 +52,9 @@ if(check_setup_status() === TRUE){
 	// }
 	 //print_r($fdata);
 }
-
+//Initializing The Timezone Here
+date_default_timezone_set(get_timezone());
+}
 function run_query($query){
 
 	global $dbc;
